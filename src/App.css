@@ -1,0 +1,147 @@
+/* Use universal selector to reset margin, padding, and box-sizing on all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Set font family and background color for the body */
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgba(155, 102, 155, 0.767) 0%, rgba(204, 240, 240, 0.726) 20%, rgba(247, 164, 164, 0.705) 60%), linear-gradient(rgb(97, 183, 217) 52%, rgb(226, 238, 158) 60%, rgb(122, 162, 226) 61%);
+}
+
+
+/* Create a container for all the content and center it */
+
+.container {
+    font-family: arial;
+    font-size: 18px;
+    margin: 250px;
+    margin-top: 15px;
+    width: 450px;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Center the heading */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Style the button */
+
+button {
+    background-color: #4CAF50;
+    color: rgb(90, 145, 228);
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+/* Style the form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+/* Style the form label */
+
+label {
+    margin-bottom: 10px;
+}
+
+
+/* Style the form input */
+
+input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: auto;
+    margin-right: 1.5rem;
+    overflow: hidden;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    /* add 10px of space between icons */
+}
+
+
+/* Style the card heading */
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* Style the card paragraph */
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+/* Create a media query for smaller screens */
+
+@media only screen and (max-width: 767px) {
+    /* Change the width and margin of the cards for smaller screens */
+    .card {
+        width: calc(50% - 1rem);
+        margin-right: 0.5rem;
+    }
+}
+
+
+/* Create a media query for even smaller screens */
+
+@media only screen and (max-width: 480px) {
+    /* Change the width and margin of the cards for even smaller screens */
+    .card {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.title {
+    color: black;
+}
